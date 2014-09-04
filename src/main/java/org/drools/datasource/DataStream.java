@@ -1,6 +1,6 @@
 package org.drools.datasource;
 
-public interface DataStream extends ReactiveDataSource {
+public interface DataStream<T> extends ReactiveDataSource<T> {
 
-    void send(Object obj);
+    void send(T obj);
 }

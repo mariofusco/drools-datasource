@@ -2,11 +2,11 @@ package org.drools.datasource;
 
 import java.util.Collection;
 
-public interface DataStore extends DataSource {
+public interface DataStore<T> extends DataSource<T> {
 
-    void insert(Object obj);
-    void update(Object obj);
-    void delete(Object obj);
+    void insert(T obj);
+    void update(T obj);
+    void delete(T obj);
 
-    Collection<Object> getObjects();
+    Collection<T> getObjects();
 }

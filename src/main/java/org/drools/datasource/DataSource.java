@@ -1,4 +1,4 @@
 package org.drools.datasource;
 
-public interface DataSource {
+public interface DataSource<T> {
 }

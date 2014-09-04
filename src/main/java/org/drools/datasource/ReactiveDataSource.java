@@ -1,4 +1,4 @@
 package org.drools.datasource;
 
-public interface ReactiveDataSource extends DataSource, Observable {
+public interface ReactiveDataSource<T> extends DataSource<T>, Observable {
 }

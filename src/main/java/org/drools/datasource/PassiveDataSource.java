@@ -1,4 +1,4 @@
 package org.drools.datasource;
 
-public interface PassiveDataSource extends DataSource {
+public interface PassiveDataSource<T> extends DataSource<T> {
 }
